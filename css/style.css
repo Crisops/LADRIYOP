@@ -1,0 +1,457 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+body{
+  background-repeat: no-repeat;
+  /* background-image: url("../img/fondo_2.jpg"); */
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-color: #c9501a;
+}
+
+.cabecera{
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.name_company{
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  width: 100%;
+  top: 50px;
+}
+
+.style_letras{
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-size: 80px;
+  font-family: "Cooper";
+  text-shadow: 0px 10px 10px black; 
+  letter-spacing: 5px;
+ justify-content: center;
+}
+
+.letra_company_L{
+  animation: entradaL 3s ease 1.3s forwards;
+  opacity: 0;
+}
+
+@keyframes entradaL{
+  from{
+    transform: translateY(-105px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.letra_company_A{
+  animation: entradaA 3s ease 1.8s forwards;
+  opacity: 0;
+}
+
+@keyframes entradaA{
+  from{
+    transform: translateY(-105px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.letra_company_D{
+  animation: entradaD 3s ease 2.2s forwards;
+  opacity: 0;
+}
+
+@keyframes entradaD{
+  from{
+    transform: translateY(-105px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.letra_company_R{
+  animation: entradaR 3s ease 2.7s forwards;
+  opacity: 0;
+}
+@keyframes entradaR{
+  from{
+    transform: translateY(-105px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.letra_company_I{
+  animation: entradaI 3s ease 3.2s forwards;
+  opacity: 0;
+}
+
+@keyframes entradaI{
+  from{
+    transform: translateY(-105px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.letra_company_Y{
+  animation: entradaY 3s ease 3.7s forwards;
+  opacity: 0;
+}
+
+@keyframes entradaY{
+  from{
+    transform: translateY(-105px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.letra_company_O{
+  animation: entradaO 3s ease 4.2s forwards;
+  opacity: 0;
+}
+
+@keyframes entradaO{
+  from{
+    transform: translateY(-105px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.letra_company_P{
+  animation: entradaP 3s ease 4.7s forwards;
+  opacity: 0;
+}
+@keyframes entradaP{
+  from{
+    transform: translateY(-105px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/*PARTES DE LA SECCION DE LADRILLOS*/
+.containerSection{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25em;
+}
+
+.ladrillo_comun{ 
+  position: relative;
+  left: 20px; 
+  top: 70px;
+  width: 100%;
+  /* background-color: rgba(238, 136, 19,1); */
+  background-color: rgba(225, 86, 22, 1);
+  /* background-color: rgba(238, 154, 18, 1); */
+  /* background-color: rgba(230, 111, 67, 1); */
+  border-radius: 30px;
+}
+
+.title_ladrillo_Comun{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  color:#271400;
+  font-family: "Cooper";
+  text-shadow: 0px 2px 1px #fff;
+  text-align: center;
+}
+
+
+.content_ladrillo_comun{
+  position: relative;
+  top: 5%;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Constantia";
+  color: #fff;
+  text-shadow: 0px 2px 1px #000;
+}
+
+.imagen_ladrillo_comun{
+  position: relative;
+  top: 70px;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  border-radius: 40px;
+  background-color: rgba(225, 86, 22, 1);
+}
+
+.ladrillo_comun_img{
+  width: 100%;
+  height: 100%;
+}
+
+.botonComprarLadrilloComun{
+  width: 100%;
+  height: 100%;
+}
+
+.comprar_comun{
+  position: relative;
+  top: -40px;
+  font-family: 'Cooper';
+  font-size: 35px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.comprar_comun:hover{
+  box-shadow: 0px 0px 20px #fff;
+  transform: scale(1.1);
+}
+
+
+
+/* --------------------- LADRILLO  HUECO ------------------*/
+.imagen_ladrillo_hueco{
+  position: relative;
+  margin: auto;
+  background-color: rgba(225, 86, 22, 1);
+  border-radius: 40px;
+}
+
+.ladrillo_hueco{
+  position: relative;
+  right: 20px; 
+  width: 100%;
+  height: 100%;
+  background-color: rgba(225, 86, 22, 1);
+  border-radius: 30px;
+}
+
+.title_ladrillo_Hueco{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  color:#271400;
+  font-family: "Cooper";
+  text-shadow: 0px 2px 1px #fff;
+  text-align: center;
+}
+
+.content_ladrillo_Hueco{
+  position: relative;
+  top: 10%;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Constantia";
+  color: #fff;
+}
+
+.botonComprarLadrilloHueco{
+  width: 100%;
+  height: 100%;
+}
+
+.comprar_hueco{
+  position: relative;
+  top: -40px;
+  font-family: 'Cooper';
+  font-size: 35px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.comprar_hueco:hover{
+  box-shadow: 0px 0px 20px #fff;
+  transform: scale(1.1);
+}
+
+
+/* --------------------- LADRILLO  HUECO ------------------*/
+
+/* --------------------- BLOQUE DE CEMENTO ------------------*/
+
+.ladrillo_cemento{ 
+  position: relative;
+  left: 20px; 
+  top: 70px;
+  width: 100%;
+  /* background-color: rgba(238, 136, 19,1); */
+  background-color: rgba(225, 86, 22, 1);
+  /* background-color: rgba(238, 154, 18, 1); */
+  /* background-color: rgba(230, 111, 67, 1); */
+  border-radius: 30px;
+}
+
+.title_ladrillo_Cemento{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  color:#271400;
+  font-family: "Cooper";
+  text-shadow: 0px 2px 1px #fff;
+  text-align: center;
+}
+
+
+.content_ladrillo_cemento{
+  position: relative;
+  top: 5%;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Constantia";
+  color: #fff;
+  text-shadow: 0px 2px 1px #000;
+}
+
+.imagen_ladrillo_cemento{
+  position: relative;
+  top: 70px;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  border-radius: 40px;
+  background-color: rgba(225, 86, 22, 1);
+}
+
+.ladrillo_cemento_img{
+  width: 100%;
+  height: 100%;
+}
+
+.botonComprarLadrilloCemento{
+  width: 100%;
+  height: 100%;
+}
+
+.comprar_cemento{
+  position: relative;
+  top: -40px;
+  font-family: 'Cooper';
+  font-size: 35px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.comprar_cemento:hover{
+  box-shadow: 0px 0px 20px #fff;
+  transform: scale(1.1);
+}
+/* --------------------- BLOQUE DE CEMENTO ------------------*/
+
+/* --------------------- LADRILLO RETAK ------------------*/
+
+.imagen_ladrillo_retak{
+  position: relative;
+  margin: auto;
+  background-color: rgba(225, 86, 22, 1);
+  border-radius: 40px;
+}
+
+.ladrillo_retak{
+  position: relative;
+  right: 20px; 
+  width: 100%;
+  height: 100%;
+  background-color: rgba(225, 86, 22, 1);
+  border-radius: 30px;
+}
+
+.title_ladrillo_Retak{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  color:#271400;
+  font-family: "Cooper";
+  text-shadow: 0px 2px 1px #fff;
+  text-align: center;
+}
+
+.content_ladrillo_Retak{
+  position: relative;
+  top: 10%;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Constantia";
+  color: #fff;
+}
+
+.botonComprarLadrilloRetak{
+  width: 100%;
+  height: 100%;
+}
+
+.comprar_retak{
+  position: relative;
+  top: -40px;
+  font-family: 'Cooper';
+  font-size: 35px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.comprar_retak:hover{
+  box-shadow: 0px 0px 20px #fff;
+  transform: scale(1.1);
+}
+/* --------------------- LADRILLO RETAK ------------------*/
+

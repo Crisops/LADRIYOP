@@ -1,0 +1,32 @@
+.ladrillo_comun{
+  animation: entradaComun 3s ease 5.5s forwards;
+  opacity: 0;
+}
+
+@keyframes entradaComun{
+  from{
+    transform: translateX(-105px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.imagen_ladrillo_comun{
+  animation: entradaLadrilloComun 3s ease 6.2s forwards;
+  opacity: 0;
+}
+
+
+@keyframes entradaLadrilloComun{
+  from{
+    transform: translateX(110px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
